@@ -4,9 +4,13 @@
         <title>Lawnmower Game</title>
         <script type="text/javascript" src="app.js"></script>
         <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+        <style> // Store
+localStorage.setItem("money", "totalMowed");
+
+// Retrieve
+document.getElementById("money").innerHTML = localStorage.getItem("totalMowed");
         
-        
-        
+        </style>
     </head>
     
     <body>
