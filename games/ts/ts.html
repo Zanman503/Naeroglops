@@ -108,7 +108,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <span class="close">&times;</span>
      <p id="money">$0</p>
         <p id="totalMowed">Total Grass Mowed: 0</p>
-      <button onclick="1000()">+1000$</button>
+      <button onclick=" updateMoney()">+1000$</button>
   </div>
 
 </div>
@@ -144,16 +144,8 @@ window.onclick = function(event) {
         </div>
         
     </body>
-    <script>
-        function 1000(){
-    document.getElementById("money").innerHTML = "1000" + Math.floor(money);
-    if(activeField.superTicks > 0){
-        document.getElementById("superTicks").innerHTML = "Super Ticks: " + activeField.superTicks;
-    }else{
-        document.getElementById("superTicks").innerHTML = "";
-    }
-}
-        </script>
+ 
+        
     
     
 <button onclick="1000()">+1000$</button>    
