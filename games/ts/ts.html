@@ -144,8 +144,16 @@ window.onclick = function(event) {
         </div>
         
     </body>
-    
-    
+    <script>
+        function 1000(){
+    document.getElementById("money").innerHTML = "1000" + Math.floor(money);
+    if(activeField.superTicks > 0){
+        document.getElementById("superTicks").innerHTML = "Super Ticks: " + activeField.superTicks;
+    }else{
+        document.getElementById("superTicks").innerHTML = "";
+    }
+}
+        </script>
     
     
     
