@@ -13,16 +13,7 @@ localStorage.setItem(money, totalMowed);
 document.getElementById(money).innerHTML = localStorage.getItem(totalMowed);
         
         </script>
-        <script>
-if(typeof(EventSource) !== "undefined") {
-  var source = new EventSource("demo_sse.php");
-  source.onmessage = function(event) {
-    document.getElementById("result").innerHTML += event.data + "<br>";
-  };
-} else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
-}
-</script>
+     
      
     </head>
     
@@ -115,7 +106,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <div id="result"></div>
+     <p id="money">$0</p>
+        <p id="totalMowed">Total Grass Mowed: 0</p>
   </div>
 
 </div>
