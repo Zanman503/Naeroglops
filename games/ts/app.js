@@ -310,6 +310,15 @@ function updateMoney(){
     }
 }
 
+function up(){
+    document.getElementById("money").innerHTML = "1000" + Math.floor(money);
+    if(activeField.superTicks > 0){
+        document.getElementById("superTicks").innerHTML = "Super Ticks: " + activeField.superTicks;
+    }else{
+        document.getElementById("superTicks").innerHTML = "";
+    }
+}
+
 function addFields(){
     fields.push(new Area("Grass", 0, 1, [0,210,0], [0,130,0], "rgb(255,0,0)", 0, "Total Grass Mowed: ", 1, "Lawnmower", "Wow this lawn grows fast."));
     fields.push(new Area("Dirt", 0.15, 10, [175, 175, 175], [122, 96, 0], "rgb(68, 130, 206)", 100000, "Total Dirt Vacuumed: ", 5, "Vacuum", "Vroom, vroom"));
